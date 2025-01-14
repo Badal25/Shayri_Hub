@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(45deg, #333);
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 94%;
+    z-index: 1000;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    
+}
+nav .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(45deg, #333);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+#reels {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.reel-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reel {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reel-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+ /* .reel-actions {
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reel-actions button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+} 
+
+ .reel-actions img {
+    width: 40px;
+    height: 40px;
+}
+
+.reel-actions span {
+    font-size: 12px;
+}  */
+
+.mute-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mute-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.reel-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.reel-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    padding: 10px;
+}
+
+.reel-actions button img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.reel-actions button span {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.reel-actions button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    
+}
+
+.reel-actions button:active {
+    transform: scale(1.1);
+}
+
+.reel-actions .like-btn.liked span {
+    color: white; /* Change the like count color when liked */
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    nav .menu-toggle {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+        position: relative; /* Enables fine control over its placement */
+        left: -45px; /* Move it 10px to the right */
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(45deg, #333);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}

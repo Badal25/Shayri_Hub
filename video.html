@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-Like Reels</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <a href="#" class="logo">Shayari Hub</a>
+            <span class="menu-toggle" id="menu-toggle">☰</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="reels">
+        <div class="reel-container">
+            <!-- Reel 1 -->
+            <div class="reel">
+                <video src="Video/reel2.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+                
+            </div>
+    
+            <!-- Reel 2 -->
+                
+            <div class="reel">
+                <video src="Video/reel3.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- Reel 3 -->
+            <div class="reel">
+                <video src="Video/reel4.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+                
+            </div>
+            <!-- Reel 4 -->
+            <div class="reel">
+                <video src="Video/reel.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+                
+            </div>
+            <!-- Reel 5 -->
+            <div class="reel">
+                <video src="Video/reel5.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+            <!-- Reel 6 -->
+            <div class="reel">
+                <video src="Video/reel6.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+                <!-- Reel 7 -->
+            <div class="reel">
+                <video src="Video/reel7.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+               <!-- Reel 8 -->
+               <div class="reel">
+                <video src="Video/reel8.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+               <!-- Reel 9 -->
+               <div class="reel">
+                <video src="Video/reel9.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+               <!-- Reel 10 -->
+               <div class="reel">
+                <video src="Video/reel10.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+               <!-- Reel 11 -->
+               <div class="reel">
+                <video src="Video/reel11.mp4" muted loop></video>
+                <div class="reel-info">
+                    <h3>@badalwasnik_14</h3>
+                    <p>Caption for the first reel...</p>
+                </div>
+                <div class="reel-actions">
+                    <button class="mute-btn" onclick="toggleMute()">
+                        <img src="image/mute.png" alt="Mute" class="mute-icon">
+                    </button>
+                    <button class="like-btn" onclick="handleLike(this)">
+                        <img src="image/like.png" alt="Like">
+                        <span class="like-count">120</span>
+                    </button>
+                    <button class="comment-btn" onclick="openComments()">
+                        <img src="image/icons8-comments-48.png" alt="Comment">
+                        <span class="comment-count">45</span>
+                    </button>
+                    <button class="share-btn" onclick="shareContent()">
+                        <img src="image/icons8-share-rounded-30.png" alt="Share">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <footer>
+        <p>&copy; 2025 Hindi Shayari. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll('.reel video');
+    const muteButtons = document.querySelectorAll('.mute-btn');
+
+    // Toggle mute/unmute for each video
+    muteButtons.forEach((button, index) => {
+        const video = videos[index];
+        const muteIcon = button.querySelector('.mute-icon');
+        
+        button.addEventListener('click', () => {
+            video.muted = !video.muted; // Toggle muted property
+            
+            // Update button icon based on mute state
+            if (video.muted) {
+                muteIcon.src = "image/mute.png"; // Path to mute icon
+                muteIcon.alt = "Mute";
+            } else {
+                muteIcon.src = "image/icons8-speaker-30.png"; // Path to unmute icon
+                muteIcon.alt = "Unmute";
+            }
+        });
+    });
+
+    // Create an IntersectionObserver to detect visibility of videos
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+
+            if (entry.isIntersecting) {
+                video.play();  // Play the video when it is in the viewport
+            } else {
+                video.pause(); // Pause the video when it's out of the viewport
+            }
+        });
+    }, {
+        threshold: 0.5  // Video should be at least 50% visible to trigger play
+    });
+
+    // Observe each video
+    videos.forEach(video => {
+        observer.observe(video);
+    });const header = document.getElementById('main-header');
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.querySelector('nav ul');
+
+// Track the visibility state
+let isVisible = true;
+
+menuToggle.addEventListener('click', () => {
+    if (isVisible) {
+        header.classList.add('hidden'); // Hide the header
+        navMenu.classList.remove('active'); // Hide the menu
+        menuToggle.textContent = '☰'; // Change to hamburger icon
+    } else {
+        header.classList.remove('hidden'); // Show the header
+        navMenu.classList.add('active'); // Show the menu
+        menuToggle.textContent = '✖'; // Change to cross icon
+    }
+    isVisible = !isVisible; // Toggle the state
+});
+
+});
+
+
+
+// Toggle mute/unmute
+function toggleMute() {
+    const muteIcon = document.querySelector('.mute-icon');
+    if (muteIcon.src.includes('icons8-speaker-30.png')) {
+        muteIcon.src = 'image/icons8-muted-30.png'; // Replace with muted icon
+        console.log('Muted');
+    } else {
+        muteIcon.src = 'image/icons8-speaker-30.png'; // Replace with speaker icon
+        console.log('Unmuted');
+    }
+}
+
+// Handle like button
+function handleLike(button) {
+    const likeCountElement = button.querySelector('.like-count');
+    let likeCount = parseInt(likeCountElement.textContent);
+    button.classList.toggle('liked');
+    if (button.classList.contains('liked')) {
+        likeCount += 1;
+        console.log('Liked');
+    } else {
+        likeCount -= 1;
+        console.log('Unliked');
+    }
+    likeCountElement.textContent = likeCount;
+}
+
+// Open comments
+function openComments() {
+    console.log('Comments opened');
+    alert('Comming Soon ');
+}
+
+// Share content
+function shareContent() {
+    console.log('Share button clicked');
+    alert('Comming soon');
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
